@@ -42,7 +42,7 @@ git log --summary : to see more information for each commit. You can see where n
 \i  
 \i0 repository. This command creates a 
 \i remote
-\i0  repo and takes a remote repo name and a repository URL (where an empty repo has been initialized) as args. This is typically done when you want to push your local repo to a remote server such as GitHub for ex. Git doesn't care what you name your remotes, but it's typical to name your main one \ul origin\ulnone .\
+\i0  repo and needs a remote repo name and a repository URL (where an empty repo has been initialized - this means DO NOT select a readme or .gitignore or license while creating the GitHub empty repo. If you do, the push will fail. Do thatose steps after pushing the local repo to the remote repo). This is typically done when you want to push your local repo to a remote server such as GitHub for ex. Git doesn't care what you name your remotes, but it's typical to name your main one \ul origin\ulnone .\
 \
 Example: git remote add origin https://github.com/try-git/try_git.git\
 \
@@ -73,7 +73,8 @@ git checkout <branch name> : switch to branch name\
 \
 git rm <filenames> or git rm \'91*.txt\'92 : to remove or delete files and stage for commit, all in one step. \
 \
-\ul Make changes to code and commit on the branch and then to merge the changes from branch to master  and then delete the branch, do following:\ulnone \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 \ul \ulc0 Make changes to code and commit on the branch and then to merge the changes from branch to master  and then delete the branch, do following:\ulnone \
 \
 git checkout master\
 \
@@ -103,7 +104,7 @@ git push (since we previously ran git push -u origin master, it remembers the se
 staged : files that are ready to be committed (say after git add)\
 \
 unstaged : \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Files with changes that have not been prepared to be committed.\
+Files with changes that have not been prepared to be committed.\
 \
 untracked : Files aren't tracked by Git yet. This usually indicates a newly created file.\
 \
@@ -118,7 +119,7 @@ Branching : When developers are working on a feature or bug they'll often create
 \cf2 Pull Requests : If you're hosting your repo on GitHub, you can do something called a pull request.\
 A pull request allows the boss of the project to look through your changes and make comments before deciding to merge in the change. It's a really great feature that is used all the time for remote workers and open-source projects.\
 \
- \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+ \cf0 \kerning1\expnd0\expndtw0 \
 \
 \
 }
