@@ -1,7 +1,7 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red24\green143\blue206;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cspthree\c28981\c62250\c82493\c85333;\cssrgb\c0\c0\c0;}
 \margl1440\margr1440\vieww22360\viewh14820\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
@@ -63,9 +63,20 @@ git diff HEAD :  If pull shows that there have been changes, then we can see wha
 \cf0 We want the diff of our most recent commit, which we can refer to using the HEAD pointer.\
 Example: git diff HEAD\
 \
-git checkout -- <target> : to (re)set the state of repo to target.\
+git checkout <target> : to (re)set the state of repo to target which are shown next to commit when you do a git log.\
 \
-git branch <branch name> : creates a copy (or branch) of the main code.\
+Ex: 
+\f1\fs22 \cf1 \cb2 \CocoaLigature0 git checkout 7499a39992a606fb86caa86f161ff7f334883675\
+
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+You can view the previous state of your files here. To return to the master branch to see the most current state of your files, do:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf1 \cb2 \CocoaLigature0 git checkout master\
+
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 git branch <branch name> : creates a copy (or branch) of the main code.\
 \
 git branch : list all branches\
 \
@@ -103,7 +114,7 @@ git push (since we previously ran git push -u origin master, it remembers the se
 \cf0 \
 staged : files that are ready to be committed (say after git add)\
 \
-unstaged : \cf2 \expnd0\expndtw0\kerning0
+unstaged : \cf3 \expnd0\expndtw0\kerning0
 Files with changes that have not been prepared to be committed.\
 \
 untracked : Files aren't tracked by Git yet. This usually indicates a newly created file.\
@@ -111,12 +122,12 @@ untracked : Files aren't tracked by Git yet. This usually indicates a newly crea
 deleted : File has been deleted and is waiting to be removed from Git.\
 \
 \pard\pardeftab720\sl280\partightenfactor0
-\cf2 HEAD : The HEAD is a pointer that holds your position within all your different commits. By default HEAD points to your most recent commit, so it can be used as a quick way to reference that commit.\
+\cf3 HEAD : The HEAD is a pointer that holds your position within all your different commits. By default HEAD points to your most recent commit, so it can be used as a quick way to reference that commit.\
 \
 Branching : When developers are working on a feature or bug they'll often create a copy (aka. branch) of their code they can make separate commits to. Then when they're done they can merge this branch back into their main master branch. Branches are what naturally happens when you want to work on multiple features at the same time. You wouldn't want to end up with a master branch which has Feature A half done and Feature B half done. Rather you'd separate the code base into two "snapshots" (branches) and work on and commit to them separately. As soon as one was ready, you might merge this branch back into the master branch and push it to the remote server.\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf2 Pull Requests : If you're hosting your repo on GitHub, you can do something called a pull request.\
+\cf3 Pull Requests : If you're hosting your repo on GitHub, you can do something called a pull request.\
 A pull request allows the boss of the project to look through your changes and make comments before deciding to merge in the change. It's a really great feature that is used all the time for remote workers and open-source projects.\
 \
  \cf0 \kerning1\expnd0\expndtw0 \
