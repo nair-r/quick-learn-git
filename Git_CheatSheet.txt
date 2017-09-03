@@ -41,7 +41,7 @@ Example: git diff HEAD
 
 git checkout <target> : to (re)set the state of repo to target which are shown next to commit when you do a git log.
 
-Ex: git checkout 7499a39992a606fb86caa86f161ff7f334883675
+Ex: git checkout 7499a39992a606fb86caa86f161ff7f33483648234287
 
 You can view the previous state of your files here. To return to the master branch to see the most current state of your files, do:
 git checkout master
