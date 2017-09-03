@@ -78,7 +78,7 @@ Commit : A "commit" is a snapshot of our repository. This way if we ever need to
 
 staged : files that are ready to be committed (say after git add)
 
-unstaged : Files with changes that have not been prepared to be committed.
+unstaged : Files with changes that have not been prepared to be committed (that are currently being tracked by git).
 
 untracked : Files aren't tracked by Git yet. This usually indicates a newly created file.
 
