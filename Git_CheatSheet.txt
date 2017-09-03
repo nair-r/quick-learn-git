@@ -1,4 +1,3 @@
-
 Some Git Commands & Examples:
 
 git init : initializes an empty Git (local) repo in the directory it is called from ( and creates hidden .git folder)
