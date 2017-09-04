@@ -4,8 +4,8 @@
 
 Command | Task | Notes |
 --------|------|-------|
-git init| initializes an empty Git (local) repo in the directory it is called from|  also creates hidden .git folder
-git status| shows status of repo| run this often especially before committing changes!!
+`git init`| initializes an empty Git (local) repo in the directory it is called from|  also creates hidden .git folder
+`git status`| shows status of repo| run this often especially before committing changes!!
 git add <filename>| adds file to the staging area
 git add -A .| same as above, but the dot stands for the current dir., so everything in & under it is added| -A ensures even file deletions are included.
 git add '*.txt'| using wildcards to add files in the current folder and all sub-folders under it|Wildcards: We need quotes so that Git will receive the wildcard before our shell can interfere with it. Without quotes our shell will only execute the wildcard search within the current directory. Git will receive the list of files the shell found instead of the wildcard and it will not be able to add the files inside of any sub-directory if they exist.
