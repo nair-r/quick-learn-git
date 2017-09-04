@@ -35,7 +35,7 @@ third row, first col| third row, second col
 
 (*you get the idea...*)
 
-So, this was fun! To learn more of Markdown's cool syntax, [check out this page](https://guides.github.com/features/mastering-markdown/)!. 
+So, this was fun! To learn more of Markdown's cool syntax, [check out this page](https://guides.github.com/features/mastering-markdown/)! 
 
 And finally, if you like cute furry animals(*who doesn't!*), you can embed pics of them, like this pic of a :smile_cat: learning Markdown_(*remember to check that last item off my task-list!*)
 
