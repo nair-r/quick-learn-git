@@ -45,4 +45,4 @@ And finally, if you like cute furry animals(*who doesn't!*), you can embed pics 
 
 
 
-Ciao! :wave:
+Ciao! :smile: :wave:
