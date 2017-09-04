@@ -13,10 +13,10 @@ Git Command | Task Description | Notes
 `git commit -m “some description here”`| This stores our stages changes to the repo.|commit command with a message describing what we've changed.
 `git log`| see all commits (changes) made to the repo in the order/when they were made.
 `git log --summary`|to see more information for each commit| You can see where new files were added for the first time or where files were deleted. It's a good overview of what's going on in the project. 
-`git remote`|add a remote repository|This command creates a remote repo and needs a remote repo name and a repository URL (where an empty repo has been initialized) Ex: git remote add origin https://github.com/try-git/try_git.git 
+`git remote`|add a remote repository|This command creates a remote repo and needs a remote repo name and a repository URL (where an empty repo has been initialized) `Ex: git remote add origin https://github.com/try-git/try_git.git` 
 `git push`|pushes commits to remote repo|Ex: git push -u origin master (The name of our remote is origin in above example and the default local branch name is master.
-`git pull`|check for changes on our GitHub remote repo and pull down any new changes to say, a local repo.|Ex. : git pull origin master
-`git checkout <target>`| to (re)set the state of repo to target which is shown next to commit when you do a git log|Ex: git checkout 7499a39992a606fb86caa86f161ff7f33483648234287.  You can view the previous state of your files here. To return to the master branch to see the most current state of your files, do: git checkout master
+`git pull`|check for changes on our GitHub remote repo and pull down any new changes to say, a local repo.|Ex. : `git pull origin master
+`git checkout <target>`| to (re)set the state of repo to target which is shown next to commit when you do a git log|Ex: git checkout 7499a39992a606fb86caa86f161ff7f33483648234287`.  You can view the previous state of your files here. To return to the master branch to see the most current state of your files, do: git checkout master
 `git branch <branch name>`|creates a copy (or branch) of the main code
 `git branch`| list all branches
 `git checkout <branch name>`| switch to branch name
