@@ -2,7 +2,7 @@
 #### (basic commands,not an exhaustive list):
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-command|task|notes
+command|   task   |notes
 ------|----------|------
 `git init`| initializes an empty Git (local) repo in the directory it is called from|  also creates hidden .git folder
 `git status`| shows status of repo| run this often especially before committing changes!!
@@ -10,7 +10,7 @@ command|task|notes
 `git add -A .`| same as above, but the dot stands for the current dir., so everything in & under it is added| -A ensures even file deletions are included.
 `git add '*.txt'`| using wildcards to add files in the current folder and all sub-folders under it|Wildcards: We need quotes so that Git will receive the wildcard before our shell can interfere with it. Without quotes our shell will only execute the wildcard search within the current directory. Git will receive the list of files the shell found instead of the wildcard and it will not be able to add the files inside of any sub-directory if they exist.
 `git reset <filename>`| to remove a file(s) from the staging area.
-`git commit -m “some description here”`| This stores our stages changes to the repo.|commit command with a message describing what we've changed.
+`git commit -m “description here”`| This stores our stages changes to the repo.|commit command with a message describing what we've changed.
 `git log`| see all commits (changes) made to the repo in the order/when they were made.
 `git log --summary`|to see more information for each commit| You can see where new files were added for the first time or where files were deleted. It's a good overview of what's going on in the project. 
 `git remote`|add a remote repository|This command creates a remote repo and needs a remote repo name and a repository URL (where an empty repo has been initialized) Example: git remote add origin https://github.com/try-git/try_git.git 
