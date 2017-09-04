@@ -2,7 +2,7 @@
 #### (basic commands,not an exhaustive list):
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-:**Git Command**: | :**Task Description**: | :**Notes**: 
+**Git Command** | **Task Description** | **Notes** 
 :-----|:-----|:-----
 `git init`| initializes an empty Git (local) repo in the directory it is called from|  also creates hidden .git folder
 `git status`| shows status of repo| run this often especially before committing changes!!
@@ -30,7 +30,7 @@
 # **Some Important Definitions**
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-:**Term**:| :**Description**:
+**Term**| **Description**
 :---|:---
 Staging Area| A place where we can group files together before we "commit" them to Git.
 
