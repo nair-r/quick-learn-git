@@ -1,5 +1,5 @@
 # **Some Git Commands & Examples** 
-####(basic commands,not an exhaustive list):
+#### (basic commands,not an exhaustive list):
 
 |Command| Task| Notes|
 |--------|-----|......|
