@@ -2,27 +2,20 @@
 #### (basic commands,not an exhaustive list):
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-Command | Task | Notes |
---------|------|-------|
+Git Command | Task | Notes |
+------------|------|-------|
 `git init`| initializes an empty Git (local) repo in the directory it is called from|  also creates hidden .git folder
 `git status`| shows status of repo| run this often especially before committing changes!!
-git add <filename>| adds file to the staging area
-git add -A .| same as above, but the dot stands for the current dir., so everything in & under it is added| -A ensures even file deletions are included.
-git add '*.txt'| using wildcards to add files in the current folder and all sub-folders under it|Wildcards: We need quotes so that Git will receive the wildcard before our shell can interfere with it. Without quotes our shell will only execute the wildcard search within the current directory. Git will receive the list of files the shell found instead of the wildcard and it will not be able to add the files inside of any sub-directory if they exist.
-
-git reset <filename>  : to remove a file or files from the staging area.
-
-git commit -m “some description here” : commit command with a message describing what we've changed. This stores our stages changes to the repo.
-
-git log : see all commits (changes) made to the repo in the order and when.
-
-git log --summary : to see more information for each commit. You can see where new files were added for the first time or where files were deleted. It's a good overview of what's going on in the project. 
-
+`git add <filename>`| adds file to the staging area
+`git add -A .`| same as above, but the dot stands for the current dir., so everything in & under it is added| -A ensures even file deletions are included.
+`git add '*.txt'`| using wildcards to add files in the current folder and all sub-folders under it|Wildcards: We need quotes so that Git will receive the wildcard before our shell can interfere with it. Without quotes our shell will only execute the wildcard search within the current directory. Git will receive the list of files the shell found instead of the wildcard and it will not be able to add the files inside of any sub-directory if they exist.
+`git reset <filename>`| to remove a file(s) from the staging area.
+`git commit -m “some description here”`| This stores our stages changes to the repo.|commit command with a message describing what we've changed.
+`git log`| see all commits (changes) made to the repo in the order/when they were made.
+`git log --summary`|to see more information for each commit| You can see where new files were added for the first time or where files were deleted. It's a good overview of what's going on in the project. 
+`git remote`|add a remote repository|This command creates a remote repo and needs a remote repo name and a repository URL (where an empty repo has been initialized) Example: git remote add origin https://github.com/try-git/try_git.git 
+`git push`|pushes commits to remote repo
 git remote:  add a remote repository. This command creates a remote repo and needs a remote repo name and a repository URL (where an empty repo has been initialized - this means DO NOT select a readme or .gitignore or license while creating the GitHub empty repo. If you do, the push will fail. Do thatose steps after pushing the local repo to the remote repo). This is typically done when you want to push your local repo to a remote server such as GitHub for ex. Git doesn't care what you name your remotes, but it's typical to name your main one origin.
-
-Example: git remote add origin https://github.com/try-git/try_git.git
-
-git push : tells Git where to put our commits when we're ready
 
 Example: git push -u origin master (The name of our remote is origin in above example and the default local branch name is master. The -u tells Git to remember the parameters, so that next time we can simply run git push and Git will know what to do)
 
