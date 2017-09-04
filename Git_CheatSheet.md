@@ -2,8 +2,8 @@
 #### (basic commands,not an exhaustive list):
 ------------------------------------------------------------------------------------------------------------------------------------------
 
- command | task | notes|
------|--------|-----|
+command|task|notes
+-------|------|------
 `git init`| initializes an empty Git (local) repo in the directory it is called from|  also creates hidden .git folder
 `git status`| shows status of repo| run this often especially before committing changes!!
 `git add <filename>`| adds file to the staging area
